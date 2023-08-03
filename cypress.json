@@ -1,0 +1,25 @@
+{
+    "env": {
+        "api": {
+            "host": "https://api.naka.im/api"
+        },
+        "web": {
+            "admin": {
+                "host": "https://admin_url"
+            },
+            "frontend": {
+                "host": "https://alpha.naka.im"
+            },
+            "helpdesk": {
+                "host": "https://helpdesk_url"
+            },
+            "marketplace": {
+                "host": "https://marketplace_url"
+            },
+            "nakaverse": {
+                "host": "https://nakaverse_url"
+            }
+        }
+    },
+    "chromeWebSecurity": false
+}

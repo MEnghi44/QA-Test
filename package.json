@@ -1,0 +1,39 @@
+{
+  "name": "nakamoto-automated-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "cypress:open": "CYPRESS_REMOTE_DEBUGGING_PORT=9222 cypress open",
+    "start": "CYPRESS_REMOTE_DEBUGGING_PORT=9222 cypress open",
+    "cy:run:chrome": "cypress run --browser chrome -s cypress/integration/web/frontend/games.spec.js",
+    "cy:run:firefox": "cypress run --browser firefox -s cypress/integration/web/frontend/login.spec.js",
+    "cy:run:edge": "cypress run --browser edge -s cypress/integration/web/frontend/games.spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.7.0",
+    "cypress-social-logins": "^1.14.0"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chai": "^4.3.6",
+    "cross-zip": "^4.0.0",
+    "cypress": "^7.3.0",
+    "cypress-social-logins": "^1.14.0",
+    "cypress-xpath": "^1.6.2",
+    "dotenv": "^16.0.0",
+    "eslint-plugin-cypress": "^2.11.3",
+    "ethers": "^5.1.4",
+    "express-jwt": "^6.1.0",
+    "mocha": "^9.2.2",
+    "node-fetch": "^2.6.1",
+    "puppeteer-core": "^9.1.1",
+    "semantic-release": "^19.0.2",
+    "standard": "^16.0.3",
+    "start-server-and-test": "^1.12.2",
+    "superstatic": "^8.0.0"
+  }
+}
